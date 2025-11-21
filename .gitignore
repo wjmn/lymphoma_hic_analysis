@@ -1,0 +1,11 @@
+data
+data_extra
+archive
+figures
+annotations
+metadata
+geo
+notebooks
+temp
+.ipynb_checkpoints
+.mypy_cache
