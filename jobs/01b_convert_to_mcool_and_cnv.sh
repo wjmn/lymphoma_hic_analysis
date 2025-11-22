@@ -33,3 +33,10 @@ for res in 5000 10000 25000 50000; do
     segment-cnv --cnv-file ${profile} --binsize ${res} --ploidy 2 --output ${output}
     correct-cnv -H ${input}::/resolutions/${res} --cnv-file ${output} -f
 done
+
+# Chromosomal arm-level CNV calculation
+res=500000
+profile=/gpfs/data/$USER/hic/data/cnv_profile/${res}/${sample}_CNV_profile_${res}.bedgraph
+output=/gpfs/data/$USER/hic/data/cnv_segment/${res}/${sample}_CNV_segment_${res}.bedgraph
+calculate-cnv -H ${input}::/resolutions/${res} -g hg38 -e Arima --output ${profile}
+segment-cnv --cnv-file ${profile} --binsize ${res} --ploidy 2 --output ${output}
