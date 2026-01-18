@@ -1,0 +1,5 @@
+#+title: Lymphoma Hi-C Analysis
+
+This repository contains code relating to the processing and analysis of Hi-C data from archival FFPE lymphoid cancer biopsies. Data has been deposited separately into GEO (Accession [[https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289531][GSE289531]]).
+
+See also [[https://github.com/wjmn/hicdash][hicdash]], a package developed to assist with Hi-C plotting for this project.
